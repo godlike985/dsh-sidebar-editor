@@ -20,7 +20,7 @@
  *   uses its documented `inputActions` standard prop and never touches its DOM.
  */
 window.__ModuleLoader__.load({
-  id: '@local/dsh-sidebar-editor',
+  id: 'dsh-sidebar-editor',
   factory(require) {
     const React = require('react');
     const ReactDOM = require('react-dom');
@@ -58,7 +58,7 @@ window.__ModuleLoader__.load({
       (typeof __DSH_SIDEBAR_EDITOR_EDITING__ === 'boolean' ? __DSH_SIDEBAR_EDITOR_EDITING__ : false);
 
     /** This implementation's identity in the document-preview registry and its body slot key. */
-    const IMPLEMENTATION_ID = '@local/dsh-sidebar-editor/code';
+    const IMPLEMENTATION_ID = 'dsh-sidebar-editor/code';
     /** Locale namespace this plugin registers and binds. */
     const NS = 'sidebarEditor';
     /** Row height shared by the gutter, the editor and the read-only view, in px. */
@@ -730,7 +730,7 @@ window.__ModuleLoader__.load({
     function mountStyleSheet() {
       if (typeof document === 'undefined' || document.head === undefined) return () => {};
       const element = document.createElement('style');
-      element.setAttribute('data-plugin', '@local/dsh-sidebar-editor');
+      element.setAttribute('data-plugin', 'dsh-sidebar-editor');
       element.textContent = CSS;
       document.head.appendChild(element);
       return () => {

@@ -5,4 +5,4 @@
 # authenticated save route.
 - insert:
     - id: sidebar-editor
-      name: '@local/dsh-sidebar-editor'
+      name: 'dsh-sidebar-editor'

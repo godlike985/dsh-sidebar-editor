@@ -3,7 +3,7 @@
 在 DSH 右侧栏的文档面板里**彩色预览工作区代码文件**，并把**选中的行一键引用到对话框**。
 可编辑与保存的能力仍在 bundle 里，但**默认关闭**（原因见下方「面板的形态：预览优先」）。
 
-这是一个 DSH 插件 bundle（`@local/dsh-sidebar-editor`），**免构建**：客户端半边是纯 classic script，宿主半边只注册一条路由。
+这是一个 DSH 插件 bundle（`dsh-sidebar-editor`），**免构建**：客户端半边是纯 classic script，宿主半边只注册一条路由。
 
 ## 状态
 
@@ -14,7 +14,7 @@
 
 ## 它做了什么
 
-- 注册文档预览实现 `@local/dsh-sidebar-editor/code`，属于 `extension` 档。后缀的认领规则是：
+- 注册文档预览实现 `dsh-sidebar-editor/code`，属于 `extension` 档。后缀的认领规则是：
   **内置「代码」渲染器认领的每一个后缀，我全都认领**，只排除被其他渲染器专门接管的那几个。
   因为 `extension` 档排在 `builtin` 之前，**这些文件打开时默认就是编辑器**；
   而内置「代码」渲染器仍然匹配同一个后缀，所以渲染器下拉里始终有它，随时可切回去看 Shiki 高亮。
@@ -459,7 +459,7 @@ fetch('api/sidebarEditor/save')  ──►  POST /api/sidebarEditor/save
 
 ## 卸载
 
-在插件页把 `@local/dsh-sidebar-editor` 取消选择或卸载，然后重启。
+在插件页把 `dsh-sidebar-editor` 取消选择或卸载，然后重启。
 
 ## 已知限制
 

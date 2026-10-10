@@ -29,7 +29,7 @@
  * The operations are plain functions (`saveWorkspaceFile`, `searchWorkspace`), so a
  * future agent tool can call exactly what the UI calls.
  *
- * @module @local/dsh-sidebar-editor
+ * @module dsh-sidebar-editor
  */
 
 /** Exact Fetch route the browser half posts to. */

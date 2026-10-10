@@ -1,9 +1,27 @@
 {
-  "name": "@local/dsh-sidebar-editor",
+  "name": "dsh-sidebar-editor",
   "version": "0.1.0",
-  "private": true,
-  "description": "Edit workspace code files in the right Sidebar document tab and reference the selected lines into the composer.",
+  "description": "Preview code files in the right Sidebar document tab, search workspace files by name, and reference the selected lines into the composer.",
   "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/godlike985/dsh-sidebar-editor.git"
+  },
+  "homepage": "https://github.com/godlike985/dsh-sidebar-editor#readme",
+  "bugs": {
+    "url": "https://github.com/godlike985/dsh-sidebar-editor/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "web-ui",
+    "sidebar",
+    "code",
+    "reference",
+    "search"
+  ],
   "icon": "./icon.svg",
   "exports": {
     ".": "./index.js",
