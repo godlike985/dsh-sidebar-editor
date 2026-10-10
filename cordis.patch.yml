@@ -1,0 +1,8 @@
+# The sidebar editor bundle: one plugin row, two halves.
+#
+# The Client half registers a document-preview implementation for code
+# extensions and its body; the Host half is a no-op until phase two adds the
+# authenticated save route.
+- insert:
+    - id: sidebar-editor
+      name: '@local/dsh-sidebar-editor'

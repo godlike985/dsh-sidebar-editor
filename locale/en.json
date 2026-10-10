@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Sidebar Code Reference & Search",
+    "description": "Previews code files in the Sidebar document tab, searches workspace files by name, and references the selected lines into the composer."
+  }
+}
